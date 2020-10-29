@@ -1,0 +1,15 @@
+<meta charset='utf-8'>
+<script>
+	var rub = prompt('Введите сумму в рублях:');
+	var eur = 92;
+	var usd = 72;
+
+	var RubToEUR = rub/eur;
+	var RubToUsd = rub/usd;
+
+	alert(
+		rub + 'рублей: ' + RubToEUR.toFixed(2) + ' евро \n' +
+		rub + 'рублей: ' + RubToUsd.toFixed(2) + ' долл'
+	);
+
+</script>
