@@ -1,0 +1,27 @@
+<meta charset='utf-8'>
+<script type="text/javascript">
+
+	var s = +prompt('Пожайлуста введите сумму вклада');
+	
+	while (isNaN(s) || s <=0){
+		s = +prompt('Пожайлуста введите сумму вклада, положительное число');
+	}
+	
+	var r = +prompt('Пожайлуста введите банковский процент');
+	
+	while (isNaN(r) || r <=0){
+		s = +prompt('Пожайлуста введите банковский процент, положительное число');
+	}
+	
+	for(i=1;i<=5;i++){
+		s = s*(1 + r/100);
+		if (i == 1){
+			document.write('Сумма вклада через 1 год составит: ', s.toFixed(2), '<br />');
+		} else if (i == 5){
+			document.write('Сумма вклада через 5 лет составит: ', s.toFixed(2), '<br />');
+		} else {
+			document.write('Сумма вклада через ', i, ' года составит: ', s.toFixed(2), '<br />');
+		}	
+	}
+
+</script> 
