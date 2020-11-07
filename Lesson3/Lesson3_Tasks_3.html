@@ -1,0 +1,34 @@
+<meta charset='utf-8'>
+<script type="text/javascript">
+	
+	var q = ["Что можно увидеть с закрытыми глазами?", 
+	'Чем их больше, тем вес меньше. Что это?',
+	'Не огонь, а жжется?'];
+	
+	var answers = [['сон', 'сны' ,'Сон','Сны'], ['дырки','Дырки'], ['крапива','Крапива']];
+	
+	var t = 0;
+	alert('Отгадай ' +q.length +" загадки");
+	
+	function checkq(qw,an){
+		var ii = 0;
+		var a = prompt(qw);
+		for (i = 1; i <= an.length; i++){
+			if(a == an[i-1]){
+				alert('Вы Угадали!');
+				ii++;
+			}
+		}
+		if (ii ==0){
+			alert('Вы не угадали!');	
+		}
+		return ii;
+
+	}		
+
+	for (k = 1; k<=q.length; k++){
+	t = t + checkq(q[k-1], answers[k-1]);
+	}
+		
+	document.write('Игра закончена. Вы угадали ', t, ' загадки');	
+</script> 

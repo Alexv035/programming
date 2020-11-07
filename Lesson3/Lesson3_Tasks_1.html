@@ -1,0 +1,62 @@
+<meta charset='utf-8'>
+<script type="text/javascript">
+
+// Задача а)
+function taska(n){
+	var an = [];
+	for (i  = 1; i<=n;i++){
+		an.push(i);
+	}
+	return an;
+}
+	
+	var n = +prompt('Введите число n: ');
+	var an = taska(n);
+	alert(an);
+
+// Задача b)
+function taskb(bb){
+	var b = 0;
+	for (i  = 1; i<=ab.length;i++){
+		b = b + bb[i-1];
+	}
+	return b;
+}
+	
+	var ab = [3,4,10,3,3,7];
+	var bn = taskb(ab);
+	alert("массив: " +ab +" сумма элементов масива: " +bn );
+
+// Задача c)
+function taskc(cb){
+	var c = Math.max.apply(null, cb);
+	return c;
+}
+
+	var cn = taskc(ab);
+	alert("массив: " +ab +" максимальный элемент: " +cn );
+	
+// Задача d)
+function taskd(db){
+	var d = Math.min.apply(null, db);
+	return d;
+}
+
+	var dn = taskd(ab);
+	alert("массив: " +ab +" минимальный элемент: " +dn );
+	
+// Задача f)
+function taskf(fb){
+	var fn = [];
+	for (i  = 1; i<=fb.length;i++){
+		if (fb[i-1]%2 == 0){
+			fn.push(fb[i-1]);
+		}
+	}
+	return fn;
+}
+	
+	var fn = taskf(ab);
+	alert("массив: " +ab +" четные элементы масива: " +fn );
+
+</script> 
